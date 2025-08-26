@@ -41,7 +41,7 @@ let loader = new THREE.GLTFLoader();
 
 // 假设零件 car_003.glb 到 car_107.glb
 for (let i = 3; i <= 107; i++) {
-  let fileName = `mycar/car_${String(i).padStart(3,'0')}.glb`; // mycar 文件夹路径
+  let fileName = `car_${String(i).padStart(3,'0')}.glb`; // mycar 文件夹路径
   loader.load(fileName, (gltf) => {
     let part = gltf.scene;
 
@@ -89,3 +89,4 @@ window.addEventListener('resize', () => {
 </script>
 </body>
 </html>
+
